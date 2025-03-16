@@ -1,0 +1,34 @@
+    # Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+env/
+venv/
+*.venv/
+
+# Flask Uploads
+static/uploads/
+
+base_dir/*
+
+data/images/*
+data/preprocessed/
+
+models/skin_disease.h5
+
+
+
+
+# Model Files
+
+
+# Google Colab Files
+.ipynb_checkpoints/
+
+# ngrok Authentication
+ngrok.log
+ngrok.error.log
+ngrok2.yml
