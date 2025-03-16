@@ -1,5 +1,7 @@
+Flask
+tensorflow-cpu
+keras
 tensorflow
-flask
 numpy
 pandas
 scikit-learn
