@@ -7,7 +7,7 @@ import numpy as np
 import os
 from werkzeug.utils import secure_filename
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='templates/index.html')
 
 
 def variance_scaling_fixed(**kwargs):
@@ -21,7 +21,7 @@ custom_objects = {
 }
 
 # Load the trained model (handle the VarianceScaling error)
-MODEL_PATH = "./models/skin_disease_model.h5"
+MODEL_PATH = "./models/model.h5"
 model = tf.keras.models.load_model(MODEL_PATH, compile=False, custom_objects=custom_objects, safe_mode=False)
 
 # Class Information (Disease Details)

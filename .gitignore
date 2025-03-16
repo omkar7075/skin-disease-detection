@@ -14,7 +14,7 @@ static/uploads/
 
 base_dir/*
 
-data/images/*
+data/images
 data/preprocessed/
 
 models/skin_disease.h5
