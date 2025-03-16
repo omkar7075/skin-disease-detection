@@ -1,10 +1,12 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # To suppress unnecessary TensorFlow warnings
+
 from flask import Flask, render_template, request, jsonify
 from keras.models import load_model
 import keras.initializers
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 import numpy as np
-import os
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__,template_folder='templates/index.html')
