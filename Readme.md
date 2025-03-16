@@ -1,36 +1,101 @@
-# Skin Disease Detection 
+# 🌿 **Skin Disease Detection AI Model (Flask + TensorFlow)**  
 
-This project detects skin diseases from images and provides information about causes, types, and treatment options. It includes a chatbot interface for user interaction.
+An AI-based **Skin Disease Prediction System** using **Deep Learning (CNN Model)** with **Flask API** and **Ngrok for Public URL**.
 
-## Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/omkar7075/skin-disease-detection.git
+---
 
-   pip install -r requirements.txt
+## 🛠️ **Tech Stack**
+- Flask (Backend API)
+- TensorFlow (Deep Learning Model)
+- Keras
+- Pyngrok (For Public URL)
+- Bootstrap (Frontend UI)
 
-   python preprocess.py
+---
 
-   python train_model.py
+## 📂 **Project Structure**
+symptom_checker/
+│
+├── data/
+│   └── images/
+├── app.py
+├── train_model.py
+├── preprocess.py
+├── requirements.txt
+├── .gitignore
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── uploads/
+│
+└── models/
+    └── skin_disease_model.h5
 
-   python app.py
+
 
 
 ---
 
-### **Conclusion**
-This project provides a complete pipeline for detecting skin diseases and interacting with a chatbot. You can further enhance it by:
-- Adding more diseases and improving the dataset.
-- Integrating NLP for a more interactive chatbot.
-- Deploying it on a cloud platform for public access.
+## ✅ **Step 1: Clone the Repository**
+```bash
+git clone https://github.com/omkar7075/skin-disease-detection.git
+python3 -m venv env
+.\env\Scripts\activate
+pip install -r requirements.txt
+python app.py
 
-Let me know if you need further assistance!
-
-
-echo "# skin-disease-detection" >> README.md
-git init
+📤 Upload Image and Predict
+Upload an image of a skin disease.
+The model will predict the disease with Confidence Score and Treatment Details.
+📄 Sample Output
+Disease	Confidence	Causes	Treatment
+Melanoma	96.5%	UV Exposure, Genetic Mutation	Surgical Removal
+Basal Cell Carcinoma	89.7%	Chronic Sun Exposure	Mohs Surgery
+🔍 Troubleshooting
+Error	Solution
+No file uploaded	Ensure the image file is uploaded
+Model Not Loading	Check the model path in app.py
+Ngrok URL not generated	Restart Ngrok service
+🎯 Deployment on GitHub
+bash
+Copy
+Edit
 git add .
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/omkar7075/skin-disease-detection.git
-git push -u origin master
+git commit -m "Initial Commit"
+git push origin main
+🚀 Demo URL
+Live Demo Link
+
+🛑 Stop Flask Server
+bash
+Copy
+Edit
+ctrl + c
+📚 References
+TensorFlow Documentation
+Flask Official Docs
+Ngrok Documentation
+⭐️ Contribute
+Feel free to contribute and improve the project.
+
+📞 Contact Me
+If you face any issues, DM me on LinkedIn or GitHub. 😊
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ Now save this as `README.md` file in your project.
+
+Would you like me to generate the final folder structure for your project? 😊
+
+
+
+
+
+
+
