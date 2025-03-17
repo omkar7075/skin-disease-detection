@@ -28,8 +28,8 @@ custom_objects = {
 }
 
 # Load Trained Model
-#MODEL_PATH = "models/skin_disease_model.h5"
-MODEL_PATH = "models/model.h5"
+MODEL_PATH = "models/skin_disease_model.h5"
+#MODEL_PATH = "models/model.h5"
 model = tf.keras.models.load_model(MODEL_PATH, compile=False, custom_objects=custom_objects, safe_mode=False)
 
 # Disease Class Info
