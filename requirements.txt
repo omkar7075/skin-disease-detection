@@ -1,4 +1,4 @@
-Flask
+flask
 tensorflow-cpu
 keras
 tensorflow
@@ -9,3 +9,5 @@ opencv-python
 pillow
 gunicorn
 waitress
+keras 
+werkzeug
