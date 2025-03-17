@@ -11,8 +11,8 @@ import tensorflow as tf
 import numpy as np
 
 
-template_dir="templates/index.html"
-app = Flask(__name__, template_folder=template_dir)
+
+app = Flask(__name__, template_folder='templates')
 
 #run_with_ngrok(app)
 
