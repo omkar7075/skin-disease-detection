@@ -3,6 +3,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # To suppress unnecessary TensorFlow w
 
 from flask import Flask, render_template, request, jsonify
 from keras.models import load_model
+from keras import backend as K
 from tensorflow.keras.preprocessing import image
 from werkzeug.utils import secure_filename
 from threading import Thread
@@ -27,6 +28,10 @@ custom_objects = {
     'Zeros': keras.initializers.Zeros
 }
 
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+for device in physical_devices:
+    tf.config.experimental.set_memory_growth(device, True)
+    
 # Load Trained Model
 MODEL_PATH = "models/skin_disease_model.h5"
 #MODEL_PATH = "models/model.h5"
