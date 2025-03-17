@@ -8,3 +8,4 @@ keras
 werkzeug==2.0.3
 pandas 
 scikit-learn
+gevent
