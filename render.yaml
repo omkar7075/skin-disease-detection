@@ -3,7 +3,7 @@ services:
     name: skin-disease-detection
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    startCommand: gunicorn -k gevent --workers=1 --threads=2 app:app
     envVars:
       - key: PORT
         value: 10000
